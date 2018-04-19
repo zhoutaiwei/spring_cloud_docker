@@ -15,7 +15,7 @@ public class UserController {
 	
 	@GetMapping("/{id}")
 	public User findById(@PathVariable Long id){
-		User user = userDao.findOne(id);
+		User user = userDao.findOne(id); 
 		return user;
 		
 	}
